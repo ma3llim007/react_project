@@ -18,7 +18,7 @@ const Header = () => {
             try {
                 const response = await axios.get(`https://api.github.com/search/users?q=${username}&per_page=${usersPerPage}&page=${page}`, {
                     headers: {
-                        Authorization: "token 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",
+                        Authorization: "token <your_github_api_key>",
                     },
                 });
                 if (response.status === 200) {
