@@ -13,7 +13,7 @@ const UserDetail = () => {
 
     const HeadersOptions = {
         headers: {
-            Authorization: "token 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",
+            Authorization: "token token_number",
         },
     };
     const fetchAllDetails = async () => {
