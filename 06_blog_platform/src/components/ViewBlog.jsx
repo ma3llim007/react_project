@@ -53,7 +53,7 @@ const ViewBlog = ({ blogsData, closeViewModel }) => {
                                             </div>
                                         </div>
                                     </address>
-                                    <div className="rounded-lg h-[1000px] overflow-hidden">
+                                    <div className="rounded-lg h-[500px] overflow-hidden">
                                         <img
                                             className="object-cover object-center h-full w-full"
                                             src={blogsData?.blogImage?.coverImageUrl}
@@ -65,7 +65,7 @@ const ViewBlog = ({ blogsData, closeViewModel }) => {
                                 <h1 className="mb-4 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white">
                                     {blogsData?.title}
                                 </h1>
-                                <div className="prose lg:prose-xl prose-invert">{parse(purifyDescription)}</div>
+                                <div className="prose lg:prose-xl prose-invert w-full max-w-none">{parse(purifyDescription)}</div>
                                 <div className="flex justify-end items-end mt-5">
                                     <button
                                         onClick={() => handleRemoveBlog(blogsData?.id)}
